@@ -140,7 +140,7 @@ buttons = [
     [
         InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/Awesome-Prince/NekoRobot-3.git"
+            text="Source 🌐", url="https://graph.org/file/4aba7a36891acb0646775.mp4"
         ),
     ],
     [
@@ -148,7 +148,7 @@ buttons = [
             text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/Programmer_Updates"
+            text="📢 Updates", url="https://t.me/devilbots971"
         ),
     ],
 ]
@@ -164,14 +164,14 @@ HELP_STRINGS = """
 """
 
 GROUP_START_IMG = (
-    "https://te.legra.ph/file/5f272dc498e4cf91faf92.jpg",
-    "https://te.legra.ph/file/9d8190aba9ac3421af488.jpg",
-    "https://te.legra.ph/file/5b1ce336f0c0216224040.jpg",
-    "https://te.legra.ph/file/f1f67047d973f3aea4004.jpg",
-    "https://te.legra.ph/file/c2526c05d65fd2fbfa58b.jpg",
+    "https://graph.org/file/f080d3da8658a43969b2c.jpg",
+    "https://graph.org/file/5768c361a100dc6348c08.jpg",
+    "https://graph.org/file/439884db58c01c1d23e19.jpg",
+    "https://graph.org/file/a9389c9af7386bdae076c.jpg",
+    "https://graph.org/file/f3c1728aeda4c334f9d44.jpg",
 )
 
-DONATE_STRING = """❂ I'm Free for Everyone ❂"""
+DONATE_STRING = """❂ I'm Free for Everyone ❂ if you want to donate then contact my onwer @mrdevil2"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -309,11 +309,11 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="🚑 Support",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                            url=f"https://t.me/devilbotsupport",
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/Programmer_Updates",
+                            url="https://t.me/devilbots971",
                         ),
                     ]
                 ]
@@ -653,7 +653,7 @@ def donate(update: Update, context: CallbackContext) -> None:
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 5629305049 and DONATION_LINK:
+        if OWNER_ID != 6107980637 and DONATION_LINK:
             update.effective_message.reply_text(
                 f"You can also donate to the person currently running me [here]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
@@ -671,13 +671,13 @@ def donate(update: Update, context: CallbackContext) -> None:
             )
 
             update.effective_message.reply_text(
-                text="I'm free for everyone❤️\njust donate by subs channel, Don't forget to join the support group.",
+                text="I'm free for everyone❤️\njust donate by subs channel, Don't forget to join the group @akatsuki976.",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
                                 text="📢 Updates",
-                                url="https://telegram.dog/Programmer_Updates",
+                                url="https://t.me/devilbots971",
                             ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
